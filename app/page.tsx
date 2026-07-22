@@ -93,7 +93,6 @@ export default function Home() {
           }
         }
 
-        /* Capa con grano sutil para textura elegante */
         .aurora-overlay {
           position: absolute;
           inset: 0;
@@ -173,11 +172,14 @@ export default function Home() {
           transform: scale(1.05);
         }
 
+        /* ESTILO PARA TU LOGO EN IMAGEN */
         .logo-img {
-          width: 42px;
-          height: 42px;
-          border-radius: 10px;
+          width: 44px;
+          height: 44px;
+          border-radius: 12px;
           object-fit: cover;
+          border: 1px solid rgba(0, 230, 118, 0.4);
+          box-shadow: 0 0 12px rgba(0, 230, 118, 0.25);
         }
 
         .logo-text {
@@ -468,6 +470,7 @@ export default function Home() {
           <div className="container">
             <nav className="navbar-nav">
               <div className="logo-container">
+                {/* AQUÍ ESTÁ TU IMAGEN EXACTA */}
                 <img 
                   src="/flowpay-logo.jpeg" 
                   alt="FlowPay Logo" 
