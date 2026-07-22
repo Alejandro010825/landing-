@@ -469,7 +469,7 @@ export default function Home() {
             <nav className="navbar-nav">
               <div className="logo-container">
                 <img 
-                  src="/apple-touch-icon.jpg" 
+                  src="/apple-touch-icon.jpeg" 
                   alt="FlowPay Logo" 
                   className="logo-img" 
                 />
