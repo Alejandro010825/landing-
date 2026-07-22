@@ -173,10 +173,16 @@ export default function Home() {
           transform: scale(1.05);
         }
 
-        .logo-img {
-          width: 38px;
-          height: 38px;
-          object-fit: contain;
+        .logo-icon {
+          width: 40px;
+          height: 40px;
+          background: #0f172a;
+          border: 1px solid rgba(0, 230, 118, 0.3);
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 0 15px rgba(0, 230, 118, 0.2);
         }
 
         .logo-text {
@@ -467,12 +473,13 @@ export default function Home() {
           <div className="container">
             <nav className="navbar-nav">
               <div className="logo-container">
-                {/* Usamos globe.svg temporalmente para asegurar que no se rompa */}
-                <img 
-                  src="/globe.svg" 
-                  alt="FlowPay Logo" 
-                  className="logo-img" 
-                />
+                {/* SVG Nativo de FlowPay (Nunca se rompe) */}
+                <div className="logo-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 4H18V8H10V11H16V15H10V20H6V4Z" fill="#00E676"/>
+                    <path d="M14 11L18 7V15L14 11Z" fill="#00E676"/>
+                  </svg>
+                </div>
                 <div className="logo-text">
                   Flow<span>Pay</span>
                 </div>
@@ -615,7 +622,7 @@ export default function Home() {
               <div className="faq-item">
                 <h4>¿La aplicación necesita conexión a Internet?</h4>
                 <p>
-                  FlowPay cuenta con una arquitectura optimizada para registrar ventas de manera rápida y synchronizar tus datos de forma segura mediante nuestra API REST.
+                  FlowPay cuenta con una arquitectura optimizada para registrar ventas de manera rápida y sincronizar tus datos de forma segura mediante nuestra API REST.
                 </p>
               </div>
             </div>
