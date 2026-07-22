@@ -144,7 +144,7 @@ export default function Home() {
         }
 
         header.navbar-header {
-          padding: 24px 0;
+          padding: 16px 0;
           border-bottom: 1px solid var(--card-border);
           backdrop-filter: blur(16px);
           -webkit-backdrop-filter: blur(16px);
@@ -160,18 +160,33 @@ export default function Home() {
           align-items: center;
         }
 
-        .logo {
-          font-size: 1.6rem;
-          font-weight: 800;
+        .logo-container {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          text-decoration: none;
           transition: transform 0.3s ease;
           cursor: pointer;
         }
 
-        .logo:hover {
+        .logo-container:hover {
           transform: scale(1.05);
         }
 
-        .logo span {
+        .logo-img {
+          width: 42px;
+          height: 42px;
+          border-radius: 10px;
+          object-fit: cover;
+        }
+
+        .logo-text {
+          font-size: 1.6rem;
+          font-weight: 800;
+          color: var(--text-main);
+        }
+
+        .logo-text span {
           color: var(--primary-accent);
         }
 
@@ -452,8 +467,15 @@ export default function Home() {
         <header className="navbar-header">
           <div className="container">
             <nav className="navbar-nav">
-              <div className="logo">
-                ⚡ Flow<span>Pay</span>
+              <div className="logo-container">
+                <img 
+                  src="/apple-touch-icon.jpg" 
+                  alt="FlowPay Logo" 
+                  className="logo-img" 
+                />
+                <div className="logo-text">
+                  Flow<span>Pay</span>
+                </div>
               </div>
             </nav>
           </div>
