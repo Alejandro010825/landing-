@@ -174,10 +174,9 @@ export default function Home() {
         }
 
         .logo-img {
-          width: 42px;
-          height: 42px;
-          border-radius: 10px;
-          object-fit: cover;
+          width: 38px;
+          height: 38px;
+          object-fit: contain;
         }
 
         .logo-text {
@@ -468,8 +467,9 @@ export default function Home() {
           <div className="container">
             <nav className="navbar-nav">
               <div className="logo-container">
+                {/* Usamos globe.svg temporalmente para asegurar que no se rompa */}
                 <img 
-                  src="/apple-touch-icon.jpeg" 
+                  src="/globe.svg" 
                   alt="FlowPay Logo" 
                   className="logo-img" 
                 />
@@ -615,7 +615,7 @@ export default function Home() {
               <div className="faq-item">
                 <h4>¿La aplicación necesita conexión a Internet?</h4>
                 <p>
-                  FlowPay cuenta con una arquitectura optimizada para registrar ventas de manera rápida y sincronizar tus datos de forma segura mediante nuestra API REST.
+                  FlowPay cuenta con una arquitectura optimizada para registrar ventas de manera rápida y synchronizar tus datos de forma segura mediante nuestra API REST.
                 </p>
               </div>
             </div>
